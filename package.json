@@ -1,17 +1,17 @@
 {
-  "name": "jc8backend-api",
+  "name": "ujianBackend-JC8",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
-    "dev" : "env-cmd ./config/dev.env nodemon src/index.js"
+    "start": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "express": "^4.16.4",
     "handlebars": "^4.1.2",
     "html-pdf": "^2.2.0",

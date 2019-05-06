@@ -1,44 +1,17 @@
 const express = require('express')
-const userRouter = require('./routers/userRouter')
-const tasksRouter = require('./routers/taskRouter')
+const movieRouter = require('./routers/movieRouter')
+const movieCatRouter = require('./routers/movieCatRouter')
+const catRouter = require('./routers/catRouter')
 
 const app = express()
-const port = process.env.PORT
+const port = 1928
 
-app.get('/', (req, res) => {
-    res.send(`<h1>API Running on Heroku port ${port}</h1>`)
-})
 
-app.get('/test', (req, res) => {
-    res.send(`<h1>TEST</h1>`)
-})
 
 app.use(express.json())
-app.use(userRouter)
-app.use(tasksRouter)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.use(movieRouter)
+app.use(movieCatRouter)
+app.use(catRouter)
 
 
 
